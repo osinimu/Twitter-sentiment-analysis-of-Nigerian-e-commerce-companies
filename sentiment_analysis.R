@@ -1,4 +1,4 @@
-11library(RJSONIO)
+library(RJSONIO)
 library(stringr)
 library(tm)
 library(SnowballC)
@@ -182,7 +182,7 @@ corpus = tm_map(corpus, PlainTextDocument)
 corpus = tm_map(corpus, removeNumbers)
 corpus = tm_map(corpus, content_transformer(stripWhitespace))
 corpus = tm_map(corpus, content_transformer(tolower))
-corpus = tm_map(corpus, removeWords, c("etisalat","9ja","etisalat_9ja","vodacom","nigeria","home","sleep","start","tweet","phone","aaaaay","face","datamustfall","datamustfal","network","data","call","amp"))
+corpus = tm_map(corpus, removeWords, c("jumia", "ethiopian", "ecommerce", "go tv", "jumia travel", "jumiatravel", "konga pay", "jumiafamilymarket", "kongagadgetale", "linda", "shop", "mobile", "bellanaija", "smartphone", "users", "company", "delivery", "man", "ambassador","big brother", "africa", "nigeria", "orders", "local transactions", "shopping", "vendors", "onlinekonga", "products", "shipping", "charges", "ramadan", "hotel", "jumiafood", "food", "job", "jobs"))
 corpus = tm_map(corpus, stemDocument)
 corpus = tm_map(corpus, removeWords, stopwords("en"))
 corpus = tm_map(corpus, removeWords, removePunctuation(stopwords("en")))
@@ -192,11 +192,11 @@ frequencies = DocumentTermMatrix(corpus)
 
 frequencies.common = removeSparseTerms(frequencies,0.9996)
 
-etisalatTweets = as.data.frame(as.matrix(frequencies.common))
+jumiaTweets = as.data.frame(as.matrix(frequencies.common))
 
-termFreq = data.frame(word = colnames(etisalatTweets),frequency = colSums(etisalatTweets))
+termFreq = data.frame(word = colnames(jumiaTweets),frequency = colSums(jumiaTweets))
 
-wordcloud(colnames(etisalatTweets), colSums(etisalatTweets), scale = c(4, 0.5),colors = 'darkgreen')
+wordcloud(colnames(jumiaTweets), colSums(jumiaTweets), scale = c(4, 0.5),colors = 'darkgreen')
 
 
 
