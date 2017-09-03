@@ -1,5 +1,5 @@
-# Twitter-sentiment-analysis of Nigerian ecommerce companies
+# Twitter sentiment-analysis of Nigerian e-commerce companies
 
-Thee companies are konga, jumia,yudala and payporte
+These companies are konga, jumia,yudala and payporte
 
-The whole workflow can be found here :https://www.linkedin.com/pulse/what-customers-twitter-think-nigerian-e-commerce-companies-ajulo
+A post on this analysis can be found here :https://www.linkedin.com/pulse/what-customers-twitter-think-nigerian-e-commerce-companies-ajulo
