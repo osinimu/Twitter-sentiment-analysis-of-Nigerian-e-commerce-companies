@@ -11,10 +11,10 @@ library(wordcloud)
 library(tidytext)
 
 
-api_key <- "TS0SXHklfA6hAUWKJXFqB7yjI"
-api_secret <- "xuy7ApQ7j9nM8Nh3GscBJBK9sNYFMMLK8JyrXHcOdbvGhmexyW"
-token <- "87423467-PYCD663M7AWCJXKmLHtCb30HA9baxzaTq6KsLcTQD"
-token_secret <- "fRMMrGquliERpmDEuV7uYgwbiVUakKrvqriITdyDBP2pr"
+api_key <- "*****************"
+api_secret <- "*****************"
+token <- "*****************"
+token_secret <- "*****************"
 
 #create a twitter connection
 setup_twitter_oauth(api_key, api_secret, token, token_secret)
